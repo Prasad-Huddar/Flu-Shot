@@ -2,7 +2,7 @@
 
 This project predicts the likelihood of individuals receiving H1N1 and seasonal flu vaccines using machine learning models. The solution implements an ensemble approach with multiple gradient boosting algorithms and advanced feature engineering.
 
-##📊 Overview
+Overview
 
 This is a binary classification problem that predicts:
 - **H1N1 vaccine uptake** - Whether a respondent received the H1N1 flu vaccine
@@ -10,7 +10,7 @@ This is a binary classification problem that predicts:
 
 The models are trained on survey data containing demographic information, health behaviors, opinions about vaccines, and doctor recommendations.
 
-##🚀 Key Features
+Key Features
 
 ### Advanced Feature Engineering
 - **Doctor recommendation interactions** - Combined effects of medical advice
@@ -33,7 +33,7 @@ The models are trained on survey data containing demographic information, health
 - **Log Loss** for probabilistic accuracy
 - **Cross-validated** results to ensure robustness
 
-##📁 StructureStructure
+StructureStructure
 
 ```
 Flu_Shot/
@@ -46,7 +46,7 @@ Flu_Shot/
 └── .gitignore              # Git ignore rules
 ```
 
-##🛠️ Requirements
+Requirements
 
 ### Python Packages
 ```
@@ -67,7 +67,7 @@ scipy
 pip install lightgbm catboost xgboost pandas numpy scikit-learn matplotlib category-encoders optuna scipy
 ```
 
-##🏃‍♂️ Usage
+Usage
 
 1. **Prepare Data**: Place the following CSV files in the project directory:
    - `training_set_features.csv`
@@ -82,7 +82,7 @@ pip install lightgbm catboost xgboost pandas numpy scikit-learn matplotlib categ
    - `submission.csv` file is generated with final predictions
    - ROC curves are visualized for model performance
 
-## 📈 Model Performance
+Model Performance
 
 The ensemble approach achieves state-of-the-art results through:
 - **Feature-rich engineering** creating over 20 additional meaningful features
@@ -90,7 +90,7 @@ The ensemble approach achieves state-of-the-art results through:
 - **Optimized weight selection** using evolutionary algorithms
 - **Proper calibration** ensuring reliable probability estimates
 
-##🔧 Detailscal Details
+Detailscal Details
 
 ### Encoding Strategy
 - **Label Encoding** for categorical variables
@@ -107,7 +107,7 @@ The ensemble approach achieves state-of-the-art results through:
 - **ROC AUC maximization** as objective function
 - **Non-negative weight constraints** with normalization
 
-## 📝 Data Dictionary
+Data Dictionary
 
 Key features include:
 - **Demographics**: age_group, education, income_poverty, marital_status
@@ -116,7 +116,7 @@ Key features include:
 - **Doctor Recommendations**: doctor_recc_h1n1, doctor_recc_seasonal
 - **Health Status**: chronic_med_condition, health_worker, health_insurance
 
-##🎯 Results
+Results
 
 The final submission includes probability scores for:
 - `h1n1_vaccine` - Likelihood of H1N1 vaccination (0-1)
@@ -124,7 +124,6 @@ The final submission includes probability scores for:
 
 Models are evaluated on ROC AUC scores and cross-validated log loss to ensure robust performance.
 
-##📚
 
 This solution leverages:
 - Gradient boosting best practices
@@ -134,5 +133,5 @@ This solution leverages:
 - Evolutionary optimization algorithms
 
 ---
-**Author**: Automated ML Pipeline  
+**Author**: Prasad Huddar  
 **Date**: February 2026
